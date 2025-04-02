@@ -64,9 +64,6 @@ public class Dbcp369 {
             dataSources.add(dataSource);
         }
 
-        // Two threads access one HashMap instance at the same time, and one of
-        // them modifies the HashMap.
-        // This will cause an exception.
         for (int i = 0; i < loops; i++) {
             if (buggy) {
                 break;
